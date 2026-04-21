@@ -1264,13 +1264,13 @@ function handleBooking() {
 }
 
 function generateWhatsApp(name, service, slot, phone, note) {
-  const msg = `🦷 *Appointment Request – Smile Craft Dental Clinic*\n\n` +
-                `👤 *Patient Name:* ${name}\n` +
-                `📞 *Phone:* +91${phone}\n` +
-                `🏥 *Service:* ${service}\n` +
-                `🕒 *Preferred Slot:* ${slot}\n` +
-                `📝 *Note:* ${note || 'None'}\n\n` +
-                `📍 Q7HH+RFC, Mira Bazar, Plassey, WB 741156\n` +
+  const msg = `\uD83E\uDDB7 *Appointment Request – Smile Craft Dental Clinic*\n\n` +
+                `\uD83D\uDC64 *Patient Name:* ${name}\n` +
+                `\uD83D\uDCDE *Phone:* +91${phone}\n` +
+                `\uD83C\uDFE5 *Service:* ${service}\n` +
+                `\uD83D\uDD52 *Preferred Slot:* ${slot}\n` +
+                `\uD83D\uDCDD *Note:* ${note || 'None'}\n\n` +
+                `\uD83D\uDCCD Q7HH+RFC, Mira Bazar, Plassey, WB 741156\n` +
                 `_Sent via Smile Craft Online Booking_`;
   const encoded = encodeURIComponent(msg);
   window.open(`https://wa.me/918584931199?text=${encoded}`, '_blank');
